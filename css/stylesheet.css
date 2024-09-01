@@ -1,0 +1,61 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Proza+Libre");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Keania+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Keania+One&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    /* background: linear-gradient(135deg, #1a1a4a, #27275c, #3d3d6b, #5c5c8e); */
+    background: linear-gradient(135deg, #0a0f27, #1f2937, #2a3b59, #3b3f7f);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcome-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.welcome {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7em;
+    margin-bottom: 0.5em;
+    background: linear-gradient(135deg, #5c5c8e, #d1d1e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    white-space: nowrap;
+}
+
+.cursor {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5em;
+    color: #d1d1e0;
+    animation: blink-cursor 0.7s steps(40) infinite normal;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.blinking-dot {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5em;
+    color: #d1d1e0;
+    animation: blink-cursor 0.7s steps(2) infinite;
+}
+
+@keyframes blink-cursor {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
